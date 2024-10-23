@@ -1,8 +1,8 @@
-using JogoGourmetCore;
+using GameGourmetCore;
 
-namespace JogoGourmetTests
+namespace GameGourmetTests
 {
-    public class UnitTest1
+    public class GameGourmetUnitTest
     {
         [Fact]
         public void Game_Initialization_Should_Set_CurrentNode_To_Root()
@@ -15,7 +15,7 @@ namespace JogoGourmetTests
 
             // Assert
             Assert.NotNull(currentNode);
-            Assert.Equal("massa", currentNode.Question);
+            Assert.Equal("pasta", currentNode.Question);
         }
 
         [Fact]
@@ -30,7 +30,7 @@ namespace JogoGourmetTests
 
             // Assert
             Assert.NotNull(currentNode);
-            Assert.Equal("lasanha", currentNode.Question);
+            Assert.Equal("lasagna", currentNode.Question);
         }
 
         [Fact]
@@ -45,7 +45,7 @@ namespace JogoGourmetTests
 
             // Assert
             Assert.NotNull(currentNode);
-            Assert.Equal("bolo de chocolate", currentNode.Question);
+            Assert.Equal("chocolate cake", currentNode.Question);
         }
 
         [Fact]
@@ -83,7 +83,7 @@ namespace JogoGourmetTests
             var game = new Game();
             var currentNode = game.CurrentNode; // Node "massa"
             var newDish = "pizza";
-            var newQuestion = "É um prato italiano?";
+            var newQuestion = "Is it an Italian dish?";
 
             // Act
             Game.UpdateGameTree(currentNode, newDish, newQuestion);
@@ -91,7 +91,7 @@ namespace JogoGourmetTests
             // Assert
             Assert.Equal(newQuestion, currentNode.Question);
             Assert.Equal(newDish, currentNode.YesNode.Question);
-            Assert.Equal("massa", currentNode.NoNode.Question);
+            Assert.Equal("pasta", currentNode.NoNode.Question);
         }
 
         [Fact]
@@ -107,7 +107,7 @@ namespace JogoGourmetTests
 
             // Assert
             Assert.NotNull(currentNode);
-            Assert.Equal("massa", currentNode.Question);
+            Assert.Equal("pasta", currentNode.Question);
         }
     }
 }

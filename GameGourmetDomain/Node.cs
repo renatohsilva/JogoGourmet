@@ -1,4 +1,4 @@
-﻿namespace JogoGourmetCore;
+﻿namespace GameGourmetCore;
 
 public class Node(string question)
 {

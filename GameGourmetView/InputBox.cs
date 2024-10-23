@@ -1,22 +1,22 @@
-﻿namespace JogoGourmetView;
+﻿namespace GameGourmetView;
 
 /// <summary>
-/// Representa uma caixa de entrada personalizada que solicita uma entrada do usuário.
-/// Inclui um prompt, um título e um ícone de mensagem.
+/// Represents a custom input box that prompts the user for input.
+/// Includes a prompt, a title, and a message icon.
 /// </summary>
 public partial class InputBox : Form
 {
     /// <summary>
-    /// O texto de entrada fornecido pelo usuário.
+    /// The input text provided by the user.
     /// </summary>
     public string InputText { get; private set; }
 
     /// <summary>
-    /// Inicializa uma nova instância da classe <see cref="InputBox"/>.
+    /// Initializes a new instance of the <see cref="InputBox"/> class.
     /// </summary>
-    /// <param name="prompt">A mensagem a ser exibida para o usuário.</param>
-    /// <param name="title">O título da caixa de entrada.</param>
-    /// <param name="icon">O ícone a ser exibido na caixa de entrada.</param>
+    /// <param name="prompt">The message to display to the user.</param>
+    /// <param name="title">The title of the input box.</param>
+    /// <param name="icon">The icon to display in the input box.</param>
     public InputBox(string prompt, string title, MessageBoxIcon icon)
     {
         InitializeComponent();
@@ -34,11 +34,11 @@ public partial class InputBox : Form
     }
 
     /// <summary>
-    /// Evento acionado quando o botão "OK" é clicado.
-    /// Captura o texto de entrada e fecha a caixa de entrada com resultado OK.
+    /// Event triggered when the "OK" button is clicked.
+    /// Captures the input text and closes the input box with an OK result.
     /// </summary>
-    /// <param name="sender">O objeto que gerou o evento.</param>
-    /// <param name="e">Os dados do evento.</param>
+    /// <param name="sender">The object that triggered the event.</param>
+    /// <param name="e">The event data.</param>
     private void BtnOk_Click(object sender, EventArgs e)
     {
         InputText = txtInput.Text;
@@ -47,11 +47,11 @@ public partial class InputBox : Form
     }
 
     /// <summary>
-    /// Evento acionado quando o botão "Cancelar" é clicado.
-    /// Fecha a caixa de entrada com resultado Cancel.
+    /// Event triggered when the "Cancel" button is clicked.
+    /// Closes the input box with a Cancel result.
     /// </summary>
-    /// <param name="sender">O objeto que gerou o evento.</param>
-    /// <param name="e">Os dados do evento.</param>
+    /// <param name="sender">The object that triggered the event.</param>
+    /// <param name="e">The event data.</param>
     private void BtnCancel_Click(object sender, EventArgs e)
     {
         DialogResult = DialogResult.Cancel;

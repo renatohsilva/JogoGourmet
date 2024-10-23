@@ -1,4 +1,4 @@
-namespace JogoGourmetView;
+namespace GameGourmetView;
 
 internal static class Program
 {

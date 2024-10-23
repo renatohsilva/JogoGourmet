@@ -1,4 +1,4 @@
-﻿namespace JogoGourmetView;
+﻿namespace GameGourmetView;
 
 partial class InputBox
 {

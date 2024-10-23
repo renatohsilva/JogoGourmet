@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JogoGourmetView", "jogoGourmetView\JogoGourmetView.csproj", "{3DC37EB8-7D1D-442A-BE1B-BC8C631F7D0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameGourmetView", "GameGourmetView\GameGourmetView.csproj", "{3DC37EB8-7D1D-442A-BE1B-BC8C631F7D0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JogoGourmetTests", "JogoGourmetTests\JogoGourmetTests.csproj", "{3E279A8D-8FE1-4A55-A156-E223A48D65C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameGourmetTests", "GameGourmetTests\GameGourmetTests.csproj", "{3E279A8D-8FE1-4A55-A156-E223A48D65C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JogoGourmetCore", "JogoGourmetDomain\JogoGourmetCore.csproj", "{3F47C028-9CC5-47AA-9E4F-3DAE4F37B4FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameGourmetCore", "GameGourmetDomain\GameGourmetCore.csproj", "{3F47C028-9CC5-47AA-9E4F-3DAE4F37B4FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

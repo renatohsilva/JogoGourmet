@@ -1,4 +1,4 @@
-﻿namespace JogoGourmetView;
+﻿namespace GameGourmetView;
 
 partial class GameForm
 {
@@ -41,7 +41,7 @@ partial class GameForm
         lblInitialMessage.Name = "lblInitialMessage";
         lblInitialMessage.Size = new Size(311, 25);
         lblInitialMessage.TabIndex = 0;
-        lblInitialMessage.Text = "Pense em um prato que você gosta!";
+        lblInitialMessage.Text = "Think of a dish you like!";
         // 
         // btnStartGame
         // 
@@ -66,7 +66,7 @@ partial class GameForm
         MinimumSize = new Size(422, 210);
         Name = "GameForm";
         StartPosition = FormStartPosition.CenterScreen;
-        Text = "Jogo Gourmet";
+        Text = "Gourmet Game";
         ResumeLayout(false);
         PerformLayout();
     }
